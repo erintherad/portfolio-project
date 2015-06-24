@@ -1,0 +1,42 @@
+@font-face {
+  font-family: aller-rg;
+  src: url('fonts/aller/Aller_Rg.ttf');
+}
+
+body {
+	background-color: #E6EBE0;
+  font-family: aller-rg;
+}
+
+.navbar {
+  background-color: #5CA4A9;
+  border-color: #5CA4A9;
+  color: #F4F1BB;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #9BC1BC;
+  color: #FFF;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: inherit;
+}
+
+.navbar-inverse .navbar-brand {
+  color: inherit;
+}
+
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  text-align:center;
+  margin-right:-4px;
+  padding: 40px 60px;
+}
+.col-md-6 {
+
+}
