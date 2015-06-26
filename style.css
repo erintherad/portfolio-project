@@ -5,14 +5,18 @@
 
 body {
   background-image: url(http://www.transparenttextures.com/patterns/rice-paper-3.png);
-	background-color: #E6EBE0;
+	background-color: #E6EBE0; /*light gray color*/
   font-family: aller-rg;
 }
 
 .navbar {
-  background-color: #5CA4A9;
-  border-color: #5CA4A9;
-  color: #F4F1BB;
+  background-color: #5CA4A9;  /*blue color*/
+  border-color: #5CA4A9;  /*blue color*/
+  color: #f9ecca; /*Yellow color*/
+}
+
+.navbar a {
+  text-align: center;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -38,6 +42,57 @@ body {
   margin-right:-4px;
   padding: 40px 60px;
 }
-.col-md-6 {
+.navtabs {
+  display: inline;
+}
 
+.nav-tabs {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  position: relative;
+}
+
+.nav-tabs:before {
+  z-index: 1;
+  left: -6px;
+  border-bottom-right-radius: 6px;
+  border-width: 0 1px 1px 0;
+}
+
+.nav-tabs:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  right: -6px;
+}
+
+.nav-tabs li:before,
+.nav-tabs li:after {
+  position: absolute;
+  border: 1px solid #AAA;
+}
+
+.nav-tabs li {
+  margin: 0 10px;
+  padding: 0 10px;
+  background: #ECECEC;
+  display: inline-block;
+  background-color: #F9ECCA;
+  position: relative;
+  z-index: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.nav-tabs li.selected {
+  background: #F9ECCA;
+  color: #FE5F55;
+  z-index: 2;
+  border-bottom-color: #FFF;
 }
